@@ -1,3 +1,5 @@
+
+
 import math
 def findTrekantOmkreds(): #Made by Yusuf, Hadi
     return 0
@@ -13,8 +15,17 @@ def findTrekantVinkler(): #Made by Said, Omar
     return 0
 
 def findTrekantOmskrevneCirkelsRadius(): #Made by Gwion, Frederik L
-    return 0
+    a = float(input('Hvad Er Din A: '))
+    b = float(input('Hvad Er Din B: '))
+    c = float(input('Hvad Er Din C: '))
+    s = (a+b+c)/2
+    aAT = math.sqrt(s*(s-a)*(s-b)*(s-c))
+    rAC1 = (a*b*c)/(aAT*4)
 
+    print('---')
+    print('Radius Af Din Cirkel Er: ', rAC1)
+    print('---')
+    
 def findTrekantOmskrevneCirkelsKordinater(): #Made by Oliver, Mads, Liam
     return 0
 
